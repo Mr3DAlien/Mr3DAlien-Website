@@ -65,6 +65,11 @@ body {
     height: 30px;
 }
 
+.navbar_social_icon img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
 #navbar_alien_logo {
     height: 100%;
     display: flex;
@@ -122,6 +127,10 @@ body {
     flex-direction: row;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.navbar_item a {
+    text-decoration: none;
 }
 
 .navbar_item a {
@@ -209,6 +218,52 @@ body {
 .navbar_item_minecraft_text {
 
 }
+
+#navbar_item_partners {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#navbar_item_partners:hover #navbar_partners_dropdown_menu {
+    display:flex;
+}
+
+#navbar_partners_dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar_partners_dropdown_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.navbar_partners_dropdown_item img {
+    margin: 0px;
+    height: 100px;
+}
+
+#navbar_partners_dropdown_item_last {
+    border: none;
+}
+
 
 @media (max-width: 1000px) {
     .navbar {
@@ -503,7 +558,6 @@ body {
 
 .content_middle {
     width: 80%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,6 +575,9 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 60%;
+    background-color: aqua;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .content_info_item {
@@ -570,4 +627,255 @@ body {
 .content_info_item p {
     margin: 0;
     padding: 0;
+}
+
+#content_twitch {
+    background-color: rgb(92, 24, 192);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+#twitch_text {
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+    font-family: "RifficFree-Bold";
+    font-weight: bold;
+    font-size: 2.5vw;
+    font-size: 70px;
+    color: white;
+}
+
+#twitch-embed {
+    width: 95%;
+    height: 700px;
+    border-color: rgb(68, 19, 141);
+    border-width: 7px;
+    border-style: solid;
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+}
+
+#content_yt {
+    background-color: rgb(254, 15, 23);
+    height: 500px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 100px;
+}
+
+.content_yt_title {
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+    font-family: "RifficFree-Bold";
+    font-weight: bold;
+    font-size: 2.5vw;
+    font-size: 70px;
+    color: white;
+}
+
+.content_yt_entries {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_yt_entry {
+    background-color: rgb(168, 13, 18);
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+}
+
+.content_yt_entry_text {
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+    font-family: "RifficFree-Bold";
+    font-weight: bold;
+    font-size: 1vw;
+    font-size: 50px;
+    color: white;
+}
+
+.content_yt_entry iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background-color: #181818;
+    height: 170px;
+    width: 100%;
+}
+
+.footer_content {
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer_cube_chaos_logo {
+    width: 55%;
+    margin-top: 2%;
+    max-height: 140px;
+}
+
+.footer_mr3dalien_text {
+    width: 70%;
+    margin-top: -0%;
+    max-height: 50px;
+    -webkit-filter: drop-shadow(2px 2px 0px #222);
+    filter: drop-shadow(2px 2px 0px #222);
+    font-family: "RifficFree-Bold";
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.footer_about_left {
+    height: 60%;
+    margin-top: 4%;
+    color: rgb(130, 130, 130);
+    font-family: "cubechaos", serif;
+    max-width: 40%;
+    font-size: 80%;
+}
+
+.footer_about_right {
+    height: 60%;
+    margin-top: 4%;
+    color: rgb(130, 130, 130);
+    font-family: "cubechaos", serif;
+    width: 40%;
+    max-width: 40%;
+    font-size: 80%;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.footer_legal {
+    margin-right: 2px;
+    width: 50%;
+}
+
+.footer_links {
+    margin-left: 2px;
+    width: 50%;
+}
+
+.footer_logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h4 {
+    font-size: 100%;
+    border-bottom:rgb(130, 130, 130);
+    border-bottom-style: solid;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.footer p {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.footer a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+#footer_sticky_piston_logo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 130%;
+}
+
+#footer_alien_logo {
+    max-width: 130px;
+}
+
+@media (max-width: 900px) {
+    .footer_content {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .footer_about_left {
+        color: rgb(180, 180, 180);
+        font-family: "cubechaos", serif;
+        max-width: 100%;
+        font-size: 70%;
+        margin-top: 3px;
+        width: 100%;
+    }
+    
+    .footer_about_right {
+        color: rgb(180, 180, 180);
+        font-family: "cubechaos", serif;
+        max-width: 100%;
+        font-size: 70%;
+        width: 100%;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .content {
+        padding-bottom: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_content {
+        width: 95%;
+    }
+}
+
+/* ALIEN PACKS */
+.alien_pack_entry {
+    width: 50%;
+    height: 500px;
+    background-color: rebeccapurple;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
 }
